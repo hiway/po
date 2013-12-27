@@ -16,4 +16,4 @@ Po does not go with the traditional Vim shortcuts and commands, but rather inven
  * You should avoid this if you have a Vim guru hovering over your shoulder.
  * If you wanted to learn Vim but found it too difficult to understand, keep reading.
  * If you learned a a little and gave up because the commands didn't feel right? Hang in there, you might find this a good starting point for your own journey to mastering editing with Vim.
-
+ 
