@@ -31,4 +31,16 @@ of unlearning - the author was hellbent on putting self through this,
 if you choose this way, please do not add this on top of your 
 configuration - it is made to replace the defaults.
 
+### How do I get started?
+
+The recommended way is to read through the config starting with 00_start, 
+and finding your way through the full configuration. Every option that 
+has been added to the file is well documented, with explanations of the 
+VimScript where needed (if you're not already a programmer, this should
+help you make sense of it too) 
+
+Once you have read through, you can comment out the includes in 00_start
+and actually test out the editor as you enable the commands and features
+one by one.
+
 
