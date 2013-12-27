@@ -54,10 +54,18 @@
 
 " -------------------- jump to occurrence  --------------------
 
-" We can navigate to next Occurrence of a character by hitting
-" o and shift-O for previous occurrence.
+" We can navigate to next Occurrence of a character with o
 :nnoremap o f
-:nnoremap O F
+
+" You can enable the next command by uncommenting it, but 
+" it is counter-intuitive when used in conjuncion with the
+" next keybindings to move back and forth. Instead stick 
+" with o - search for the character with p [char] and if 
+" it is behind the cursor, hit '[' to go back. This reduces
+" the ways with which you can do the same thing - which is 
+" a good thing. But keeping it here for those who really 
+" just want to shoot themselves in the foot ;)
+":nnoremap O F
 
 " When navigating, we'll be using the right hand over [jikl] 
 " and to narrow down on a word or a character within a word

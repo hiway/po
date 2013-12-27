@@ -40,3 +40,9 @@ exec 'source' abspath.'01_lockdown.vim'
 
 exec 'source' abspath.'02_navigation.vim'
 
+" Around this point, we should be able to move around the code
+" but we can't edit it yet. That's alright, we really need to
+" master code navigation for getting the most out of Vim. 
+" Once we're getting good at reaching the right spot within 
+" the source file, we're ready to start editing it.
+
