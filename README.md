@@ -7,7 +7,7 @@ Po is a reference to the movie Kung Fu Panda, where a bumbling big fat panda fin
 
 Po is a progressive work where we begin from resetting Vim to an editor that can do nothing, and unleash features and commands one-by-one as we master the ones that came before.
 
-Po does not go with the traditional Vim shortcuts and commands, but rather invents its own methods for doing things. This can be greately irritating for the masters of Vim Fu, but for a true master must make way for inner peace and let the disciple learn.
+Po does not go with the traditional Vim shortcuts and commands, but rather invents its own methods for doing things. This can be greately irritating for the masters of Vim Fu, but a true master must make way for inner peace and let the disciple learn.
 
 ### Is it for me?
 
