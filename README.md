@@ -17,3 +17,18 @@ Po does not go with the traditional Vim shortcuts and commands, but rather inven
  * If you wanted to learn Vim but found it too difficult to understand, keep reading.
  * If you learned a a little and gave up because the commands didn't feel right? Hang in there, you might find this a good starting point for your own journey to mastering editing with Vim.
  
+ ### Installation
+
+  * Fire up your shell in MacOSX or Linux
+  * Backup current config if any: `mv .vimrc vimrc.backup`
+  * Go into Dropbox folder: `cd ~/Dropbox`
+  * Clone the repo: `git clone https://github.com/hiway/po.git`
+  * Let po take over: `cp po/vimrc ~/.vimrc`
+
+In case you have your own setup, you really want to reconsider using 
+this configuration since it changes everything and involves a _lot_ 
+of unlearning - the author was hellbent on putting self through this,
+if you choose this way, please do not add this on top of your 
+configuration - it is made to replace the defaults.
+
+
