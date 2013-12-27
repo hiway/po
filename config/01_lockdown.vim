@@ -137,5 +137,3 @@ endfor
 " more to your arsenal. The purpose of this .vimrc is to get you 
 " started with an empty slate.
 "
-" You can stop here, and copy what's above and start fresh, or 
-" continue and use my preferences.
