@@ -113,27 +113,8 @@ endfor
 " normally.)
 :unmap! <CR>
 
-" We're unable to get to insert-mode because i is not mapped 
-" to it anymore, let's set that up but we'll choose another mapping 
-" to get back, specifically, TAB character. Since I remap CAPS-LOCK 
-" to ESC, getting into Normal mode is east with left pinky-finger, 
-" and getting back to insert-mode should be just as simple, hence TAB.
-:nnoremap <TAB> i
-
 " Let us unmap <ESC> next, because without it we can't get back to 
 " normal-mode
 :unmap <ESC>
 :unmap! <ESC>
 
-" At this point, your Vim is a minimalistic text editor, with no 
-" functionality beyond getting into insert-mode, typing stuff and 
-" getting back into command-mode and running commands.
-" We cannot even use 'dd' to delete a line, or go to a line, or 
-" move the cursor in normal-mode.
-"
-" Defining our own key mapping and customizing Vim begins here, 
-" this should be done over an extended period of time, as you 
-" learn each command and memorize the sequences and then add
-" more to your arsenal. The purpose of this .vimrc is to get you 
-" started with an empty slate.
-"

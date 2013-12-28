@@ -46,3 +46,5 @@ exec 'source' abspath.'02_navigation.vim'
 " Once we're getting good at reaching the right spot within 
 " the source file, we're ready to start editing it.
 
+exec 'source' abspath.'03_editing.vim'
+
