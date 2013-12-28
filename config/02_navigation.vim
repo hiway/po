@@ -20,32 +20,41 @@
 " convention to move by one character - instead we will move to
 " beginning of current or previous word.
 :nnoremap   j   b
+:vnoremap   j   b
 
 " Moving right is the exact opposite: we move to end of current 
 " or next word. This allows us to move through source code very
 " fast. If we assume average word to be 5 characters in length,
 " then we'll be around 5x faster just because of this choice.
 :nnoremap   l   e
+:vnoremap   l   e
 
-" Moving up and down will not be tweaked, it should work as 
-" expected, up or down by one line. [i] will move up and [j]
-" right below it will move the cursor down.
-:nnoremap   i   k
-:nnoremap   k   j
+" Moving up and down will be tweaked a little, yet it should 
+" work as expected, up or down by one row in editor, which is
+" different than moving by lines in source file - this is 
+" useful when working with line wrapping enabled.
+" [i] will move up and [j] below it will move the cursor down.
+:nnoremap   i   gk
+:vnoremap   i   gk
+:nnoremap   k   gj
+:vnoremap   k   gj
 
 " Just in case you're wondering, after :nnoremap, we give our 
 " choice of keybinding followed by Vim's original key/command.
 " This way we can make Vim work in an entirely different way.
 
+" :vnoremap allows us to use the same keys to select blocks of
+" text in the visual mode.
+
 " Moving to beginning of line should be easy too, let's select 
 " shift as a modifier to left and  right movement for the same
-:nnoremap J 0
-:nnoremap L $
+:nnoremap   J   0
+:nnoremap   L   $
 
 " Moving quickly through the source vertically shoule be easy 
 " too let's map shift I and shift K to ten lines up and down
-:nnoremap I @='10k'<CR>
-:nnoremap K @='10j'<CR>
+:nnoremap   I   @='10k'<CR>
+:nnoremap   K   @='10j'<CR>
 
 " Here, we're allowing user to specify the count and by using 
 " the = register, we multiply the default of 10 with whatever
@@ -55,7 +64,7 @@
 " -------------------- jump to occurrence  --------------------
 
 " We can navigate to next Occurrence of a character with o
-:nnoremap o f
+:nnoremap   o   f
 
 " You can enable the next command by uncommenting it, but 
 " it is counter-intuitive when used in conjuncion with the
@@ -65,7 +74,7 @@
 " the ways with which you can do the same thing - which is 
 " a good thing. But keeping it here for those who really 
 " just want to shoot themselves in the foot ;)
-":nnoremap O F
+":nnoremap  O   F
 
 " When navigating, we'll be using the right hand over [jikl] 
 " and to narrow down on a word or a character within a word
@@ -77,10 +86,25 @@
 " current line, we may want to jump to other occurrences of 
 " the same within the line - use square brackets in either 
 " direction for this.
-:nnoremap [ ,
-:nnoremap ] ;
+:nnoremap   [   ,
+:nnoremap   ]   ;
 
 " Since we've allowed comma to be excluded earlier (unable to 
 " unmap it in insert mode later, hence)… we want to remap it 
 " to <Nop> in normal mode now.
-:nnoremap , <Nop>
+:nnoremap   ,   <Nop>
+
+" -------------------- pattern search  --------------------
+
+" Pattern search within the source file. You can look for a 
+" a string within the text
+:nnoremap   p   /
+
+" Search backwards, 
+:nnoremap   P   ?
+
+" If we want to continue searching, we want to have handy 
+" commands - press shift with left little finger and use 
+" the curly braces {} to navigate back and forth.
+:nnoremap   }   n
+:nnoremap   {   N
