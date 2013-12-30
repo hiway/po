@@ -66,6 +66,10 @@
 " We can navigate to next Occurrence of a character with o
 :nnoremap   o   f
 
+" Also, we can navigate to previous occurrence of a character
+" with shift-O
+:nnoremap  O   F
+
 " When navigating, we'll be using the right hand over [jikl] 
 " and to narrow down on a word or a character within a word
 " Since we chose not to enable character-wise left-right 
