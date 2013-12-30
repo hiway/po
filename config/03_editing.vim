@@ -52,13 +52,19 @@
 " spaces manually on every new line. Also, we don't want TAB, but spaces.
 " Reference: http://stackoverflow.com/questions/65076/
 
-au BufRead,BufNewFile *.py set expandtab
-
 set expandtab           " enter spaces when tab is pressed
 set tabstop=4           " use 4 spaces to represent tab
 set softtabstop=4
 set shiftwidth=4        " number of spaces to use for auto indent
 set autoindent          " copy indent from current line when starting a new line
+
+" Let us also set up 2 spaces for HTML files.
+" http://vim.wikia.com/wiki/Indenting_source_code
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
+
+" This is an alternative way of setting up 4 spaces specifically for Python, 
+" but since we're doing that globally, this is kept here only for reference.
+" autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
 
 " make backspaces more powerful
 set backspace=indent,eol,start
