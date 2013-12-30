@@ -18,7 +18,7 @@
 
 " First, map [j] to left movement, and here also we break the 
 " convention to move by one character - instead we will move to
-" beginning of current or previous word.
+" beginning of current or previous word/token.
 :nnoremap   j   b
 :vnoremap   j   b
 
@@ -66,16 +66,6 @@
 " We can navigate to next Occurrence of a character with o
 :nnoremap   o   f
 
-" You can enable the next command by uncommenting it, but 
-" it is counter-intuitive when used in conjuncion with the
-" next keybindings to move back and forth. Instead stick 
-" with o - search for the character with p [char] and if 
-" it is behind the cursor, hit '[' to go back. This reduces
-" the ways with which you can do the same thing - which is 
-" a good thing. But keeping it here for those who really 
-" just want to shoot themselves in the foot ;)
-":nnoremap  O   F
-
 " When navigating, we'll be using the right hand over [jikl] 
 " and to narrow down on a word or a character within a word
 " Since we chose not to enable character-wise left-right 
@@ -108,3 +98,20 @@
 " the curly braces {} to navigate back and forth.
 :nnoremap   }   n
 :nnoremap   {   N
+
+" Scrolling with a mouse is tacky, but with most laptops and
+" even desktops having good trackpads (Macs, mostly?) it is 
+" a different experience - very fast to shift to the trackpad
+" and back.
+
+" If you're using a good trackpad, scrolling is a natural
+" gesture, and without it Vim unnecessarily feels stiff.
+" Let's make it more fluid by enabling scrolling with mouse.
+" This is especially useful if you're not yet used to code 
+" folding and are working with large files.
+
+:set mouse=a
+
+" There will be people who will balk at this choice - it's 
+" best to stick with what feels natural to you. Editing code
+" need not feel like working through a straitjacket.
