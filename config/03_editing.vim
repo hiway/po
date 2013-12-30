@@ -22,6 +22,11 @@
 :nnoremap   h   a
 :nnoremap   H   o
 
+" We can optionally set up space to enter into insert mode from normal 
+" mode. Feel free to uncomment if it feels odd - but new people might
+" find this easier. Especially when clubbed with mouse/trackpad on.
+:nnoremap   <Space> i
+
 " These should be enough to get started for now. Remember that we are not
 " using character-wise left-right movement for arrows [jikl] so it might
 " feel a little cumbersome to correct one typo - but using [o] to match 
