@@ -44,5 +44,21 @@
 :onoremap   d   d
 :onoremap   w   w
 
-" Setup UnDo.
+" Setup Undo.
 :nnoremap   z   u
+
+" Author's primary language is Python, which needs auto indentation for
+" sanity to prevail - without the next setup, we're left with typing out
+" spaces manually on every new line. Also, we don't want TAB, but spaces.
+" Reference: http://stackoverflow.com/questions/65076/
+
+au BufRead,BufNewFile *.py set expandtab
+
+set expandtab           " enter spaces when tab is pressed
+set tabstop=4           " use 4 spaces to represent tab
+set softtabstop=4
+set shiftwidth=4        " number of spaces to use for auto indent
+set autoindent          " copy indent from current line when starting a new line
+
+" make backspaces more powerful
+set backspace=indent,eol,start
