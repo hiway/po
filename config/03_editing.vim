@@ -17,10 +17,10 @@
 " on a new line after current line. Also, typing g will let you start 
 " typing before the cursor and shift-I will start typing at the beginning 
 " of the line.
-:nnoremap   g   i
-:nnoremap   G   I
-:nnoremap   h   a
-:nnoremap   H   o
+":nnoremap   g   i
+":nnoremap   G   I
+":nnoremap   h   a
+":nnoremap   H   o
 
 " We can optionally set up space to enter into insert mode from normal 
 " mode. Feel free to uncomment if it feels odd - but new people might

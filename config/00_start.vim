@@ -33,10 +33,6 @@ exec 'source' abspath.'01_lockdown.vim'
 
 " Let us make it functional now, we'll set up only fast code 
 " navigation and searching (for quick navigation) here.
-" You should open the following file and read through it for 
-" a detailed walkthrough of the choices - since they remap the
-" keys for navigation and the default behaviours of the new
-" keys are different.
 
 exec 'source' abspath.'02_navigation.vim'
 
