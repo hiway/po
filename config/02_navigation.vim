@@ -48,6 +48,17 @@
 " is typed at runtime. So if in normal mode we type 2K the 
 " cursor will jump 20 lines above.
 
+" Trying something interesting - moving using hjkl while in
+" interactive mode - caveat, we will have to use ctrl key
+" along with hjkl to move. Also, this will be move-by-character
+" instead of move by word boundary, because it makes more sense
+" for use when typing and editing.
+
+:inoremap <c-h> <Left>
+:inoremap <c-l> <Right>
+:inoremap <c-j> <Down>
+:inoremap <c-k> <Up>
+
 " -------------------- jump to occurrence  --------------------
 
 " We can navigate to next Occurrence of a character with o
