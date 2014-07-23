@@ -5,11 +5,6 @@
 
 set nocompatible
 
-" Set up absolute path for imports, this may be a crude method,
-" but for now, we'll stick with simplicity.
-
-:let abspath = "~/Dropbox/dev/po/config/"
-
 " We use :let to define a variable, then assign the absolute 
 " path, a string to it. Later we'll use it in conjunction with
 " the concatenate operator [.] that we will use to join the 

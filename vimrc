@@ -1,9 +1,14 @@
 " Let us begin with sourcing the correct vimrc from Dropbox, so that
 " it can stay in sync with all machines automatically.
 " To continue reading, follow the path and open the file mentioned below:
+ 
+" Set up absolute path for imports, this may be a crude method,
+" but for now, we'll stick with simplicity.
 
-if filereadable(expand("~/Dropbox/po/config/00_start.vim"))
-  source ~/Dropbox/po/config/00_start.vim
+:let abspath = "~/dev/po/config/"
+
+if filereadable(expand(abspath.'00_start.vim'))
+  source abspath.'00_start.vim'
 endif
 
 " Beyond this line, you might want to include your own customizations
