@@ -5,10 +5,10 @@
 " Set up absolute path for imports, this may be a crude method,
 " but for now, we'll stick with simplicity.
 
-:let abspath = "~/dev/po/config/"
+:let abspath = "~/dev/po/config/00_start.vim"
 
-if filereadable(expand(abspath.'00_start.vim'))
-  source abspath.'00_start.vim'
+if filereadable(expand($abspath))
+  source $abspath 
 endif
 
 " Beyond this line, you might want to include your own customizations
