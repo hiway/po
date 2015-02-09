@@ -5,10 +5,13 @@
 " Set up absolute path for imports, this may be a crude method,
 " but for now, we'll stick with simplicity.
 
-:let abspath = "~/dev/po/config/00_start.vim"
+:let abspath = '~/dev/po/config/'
+:let filepath = abspath.'00_start.vim'
 
-if filereadable(expand($abspath))
-  source $abspath 
+if filereadable(expand(filepath))
+  execute "source".filepath 
+else
+  echo 'Unable to load po! Please check the path in your ~/.vimrc'
 endif
 
 " Beyond this line, you might want to include your own customizations
