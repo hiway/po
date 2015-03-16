@@ -11,21 +11,13 @@
 " enter the insert mode with different intentions. Whether on the same
 " line, or next line, behind cursor, after the cursor etc.  We will define
 " a few that we want to use regularly. 
-
-" We will remap h to start typing text, since it is at the center of the
-" qwerty keyboard, and is readily reachable. Type shift-H to start typing
-" on a new line after current line. Also, typing g will let you start 
-" typing before the cursor and shift-I will start typing at the beginning 
-" of the line.
-":nnoremap   g   i
-":nnoremap   G   I
-":nnoremap   h   a
-":nnoremap   H   o
-
-" We can optionally set up space to enter into insert mode from normal 
-" mode. Feel free to uncomment if it feels odd - but new people might
-" find this easier. Especially when clubbed with mouse/trackpad on.
-:nnoremap   <Space> i
+:nnoremap   <Space> a
+:nnoremap   <C-h> bi
+:nnoremap   <C-j> o
+:nnoremap   <C-k> O
+:nnoremap   <C-l> ea
+:nnoremap   <C-l><C-l> $a
+:nnoremap   <C-h><C-h> 0i
 
 " These should be enough to get started for now. Remember that we are not
 " using character-wise left-right movement for arrows [jikl] so it might

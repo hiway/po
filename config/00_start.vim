@@ -39,3 +39,8 @@ exec 'source' abspath.'02_navigation.vim'
 
 exec 'source' abspath.'03_editing.vim'
 
+" I'm adding a dirty include for experimenting with everything
+" that is yet to be fully documented and put in proper place
+
+exec 'source' abspath.'99_dirty.vim'
+

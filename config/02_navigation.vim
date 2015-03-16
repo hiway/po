@@ -18,8 +18,13 @@
 " or next word. This allows us to move through source code very
 " fast. If we assume average word to be 5 characters in length,
 " then we'll be around 5x faster just because of this choice.
-:nnoremap   l   e
-:vnoremap   l   e
+":nnoremap   l   e
+":vnoremap   l   e
+
+" Moving right, alternative approach - move to beginning of next
+" word.
+:nnoremap  l  w
+:vnoremap  l  w
 
 " Moving up and down will be tweaked a little, yet it should 
 " work as expected, up or down by one row in editor, which is
@@ -36,12 +41,16 @@
 " Moving to beginning of line should be easy too, let's select 
 " shift as a modifier to left and  right movement for the same
 :nnoremap   H   0
+:vnoremap   H   0
 :nnoremap   L   $
+:vnoremap   L   $
 
 " Moving quickly through the source vertically shoule be easy 
 " too let's map shift K and shift J to ten lines up and down
 :nnoremap   K   @='10k'<CR>
+:vnoremap   K   @='10k'<CR>
 :nnoremap   J   @='10j'<CR>
+:vnoremap   J   @='10j'<CR>
 
 " Here, we're allowing user to specify the count and by using 
 " the = register, we multiply the default of 10 with whatever
