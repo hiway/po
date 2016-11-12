@@ -5,7 +5,7 @@
 " Set up absolute path for imports, this may be a crude method,
 " but for now, we'll stick with simplicity.
 
-:let abspath = '~/dev/po/config/'
+:let abspath = '~/.po/config/'
 :let filepath = abspath.'00_start.vim'
 
 if filereadable(expand(filepath))
