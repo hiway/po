@@ -20,9 +20,8 @@ Po does not always go with the traditional Vim shortcuts and commands, but rathe
 
 * Fire up your shell in MacOSX or Linux
 * Backup current config if any: `mv .vimrc vimrc.backup`
-* Go into Dropbox folder: `cd ~/Dropbox`
-* Clone the repo: `git clone https://github.com/hiway/po.git`
-* Let po take over: `cp po/vimrc ~/.vimrc`
+* Clone the repo: `git clone https://github.com/hiway/po.git ~/.po`
+* Let po take over: `cp ~/.po/vimrc ~/.vimrc`
 
 In case you have your own setup, you really want to reconsider using 
 this configuration since it changes everything and involves a _lot_ 
